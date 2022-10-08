@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 125px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 15px 0;
+    background-color: #FFF;
+}
+
+#nav .logo {
+    display: block;
+    max-width: 75px;
+}
+
+
+#header {
+    padding: 250px 0;
+    background-image: url('./img/bg-header.jpg');
+    background-size: 100% auto;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+.content {
+    max-width: 50%;
+}
+
+#header .content h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    line-height: 1.5;
+}
+
+#header .content p {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+
+.about {
+    padding: 100px 0;
+    background: #EEE;
+}
+
+.about .left {
+    float: left;
+    padding-right: 15px;
+}
+
+.about .right {
+    float: right;
+    padding-left: 15px;
+}
+
+.about h2 {
+    margin: 0 0 25px;
+}
+
+.about p {
+    margin-bottom: 16px;
+}
+
+.about p:last-of-type {
+    margin-bottom: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.services {
+    background-color: black;
+    padding: 100px 0;
+}
+
+.service {
+    max-width: 33.333333%;
+    float: left;
+    padding: 0 15px;
+}
+
+.service .inner-service {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 25px 15px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.service .inner-service:hover {
+    background-color: red;
+    transform: scale(1.2);
+}
+
+.service .inner-service img {
+    max-height: 75px;
+    margin-bottom: 20px;
+    transition: all 1s;
+}
+
+.service .inner-service h3 {
+    color: rgb(251,142,9);
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    transition: all .3s;
+}
+
+.service .inner-service p {
+    color: rgb(109, 108, 107);
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    transition: all .3s;
+}
+
+.service .inner-service:hover img {
+    transform: rotate(360deg);
+}
+.service .inner-service:hover h3,
+.service .inner-service:hover p {
+    color: #FFF;
+}
