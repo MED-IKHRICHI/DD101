@@ -5,14 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imim Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <nav id="nav">
         <div class="container">
-            <a href="/" class="logo">
-                <img src="./img/logo.png" alt="test" />
-            </a>
+            <div class="row">
+                <a href="/" class="logo">
+                    <img src="./img/logo.png" alt="test" />
+                </a>
+                <div class="menus">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">Qui somme nous ?</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#map">Map</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
     <header id="header">
@@ -27,7 +41,7 @@
             </div>
         </div>
     </header>
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="content left">
                 <h2>Qui somme nous ?</h2>
@@ -57,7 +71,7 @@
             <div class="clear"></div>
         </div>
     </section>
-    <div class="services">
+    <div id="services" class="services">
         <div class="container">
             <div class="row">
                 <div class="service">
@@ -151,5 +165,51 @@
             </iframe>
         </div>
     </div>
+
+    <div class="section-map" id="map">
+        <div class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.0885897910803!2d-9.727487684671205!3d29.68821114226716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb47b1029c9279d%3A0x58f41dc6497ebe66!2sCaf%C3%A9%20%26%20Restaurant%20Trenta!5e0!3m2!1sfr!2sma!4v1666434814301!5m2!1sfr!2sma"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="inner-col">
+                        <img src="./img/logo.png" alt="Imim Food" class="logo">
+                        <h2>Imim Food</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inner-col link">
+                        <a href="#header">Home</a>
+                        <a href="#about">Qui somme nous ?</a>
+                        <a href="#services">Services</a>
+                        <a href="#map">Map</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inner-col items">
+                        <a class="item" href="https://www.whatsapp.com/?lang=fr" target="_blank">
+                            <img src="./img/icons/whatsapp.svg" alt="Imim Food">
+                        </a>
+                        <a class="item" href="https://www.facebook.com" target="_blank">
+                            <img src="./img/icons/facebook.svg" alt="Imim Food">
+                        </a>
+                        <a class="item" href="https://www.instagram.com" target="_blank">
+                            <img src="./img/icons/instagram.svg" alt="Imim Food">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p>&copy; 2022 MA, By DD101 TAFRAOUTE</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
