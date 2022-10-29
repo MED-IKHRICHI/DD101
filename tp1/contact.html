@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imim Food - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav id="nav">
+        <div class="container">
+            <div class="row">
+                <a href="/" class="logo">
+                    <img src="./img/logo.png" alt="test" />
+                </a>
+                <div class="menus">
+                    <ul>
+                        <li><a href="./index.html#header">Home</a></li>
+                        <li><a href="./index.html#about">Qui somme nous ?</a></li>
+                        <li><a href="./#services">Services</a></li>
+                        <li><a href="./index.html#map">Map</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-contact">
+        <div class='container'>
+            <div class="inner-content">
+                <h1>Contactez-nous</h1>
+                <p>Centre tafraout, Tiznit 85450 </p>
+                <p>
+                    <a href="mailto:tafraout@ofppt.ma">tafraout@ofppt.ma</a>
+                </p>
+                <p>
+                    <a href="tel:+212512434566">+2125 124 345 66</a>
+                </p>
+                <form>
+                    <div class="input-controler">
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" id="name" placeholder="Écrivez votre nom ..." required autofocus>
+                    </div>
+                    <div class="input-controler">
+                        <label for="adress">Adresse</label>
+                        <input type="text" name="adress" id="adress" placeholder="Écrivez votre adresse ..." required>
+                    </div>
+                    <div class="input-controler">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" placeholder="Écrivez votre email ..." value="test@test.com" readonly disabled>
+                    </div>
+                    <div class="input-controler">
+                        <label for="tel">téléphone</label>
+                        <input type="tel" name="phone" id="tel" placeholder="Écrivez votre num de téléphone ..." required>
+                    </div>
+                    <div class="input-controler">
+                        <label for="subject">sujet</label>
+                        <input type="text" name="sujet" id="subject" placeholder="Écrivez votre sujet ..." required>
+                    </div>
+                    <div class="input-controler">
+                        <label for="job">Fonction</label>
+                        <select name="job" id="job">
+                            <option value="">Choisir votre fonction...</option>
+                            <option value="1">Ingénieur</option>
+                            <option value="2">Développeur</option>
+                            <option value="3">Désigneur
+                            </option>
+                            <option value="4">Boblox</option>
+                        </select>
+                    </div>
+                    <div class="input-controler message">
+                        <label for="lol">Message</label>
+                        <textarea name="Send" id="lol" cols="30" rows="10" placeholder="Entre Votre Message..." required></textarea>
+                    </div>
+                    <input id="btn-reset" class="btn" type="reset" value="annuler">
+                    <input id="btn-submit" class="btn" type="submit" value="envoyer">
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="inner-col">
+                        <img src="./img/logo.png" alt="Imim Food" class="logo">
+                        <h2>Imim Food</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inner-col link">
+                        <a href="./index.html#header">Home</a>
+                        <a href="./index.html#about">Qui somme nous ?</a>
+                        <a href="./index.html#services">Services</a>
+                        <a href="./index.html#map">Map</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inner-col items">
+                        <a class="item" href="https://www.whatsapp.com/?lang=fr" target="_blank">
+                            <img src="./img/icons/whatsapp.svg" alt="Imim Food">
+                        </a>
+                        <a class="item" href="https://www.facebook.com" target="_blank">
+                            <img src="./img/icons/facebook.svg" alt="Imim Food">
+                        </a>
+                        <a class="item" href="https://www.instagram.com" target="_blank">
+                            <img src="./img/icons/instagram.svg" alt="Imim Food">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p>&copy; 2022 MA, By DD101 TAFRAOUTE</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
