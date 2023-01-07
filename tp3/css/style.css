@@ -1,0 +1,181 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('./fonts/Oswald-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('./fonts/Oswald-SemiBold.ttf');
+    font-weight: 600;
+}
+
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('./fonts/Oswald-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('./fonts/Oswald-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('./fonts/Oswald-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Regular.otf');
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald';
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #FFF;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.2;
+    color: #FFF;
+}
+
+.btn {
+    font-family: 'Oswald';
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #e8631c;
+    padding: 20px 15px;
+    min-width: 326px;
+    text-align: center;
+}
+
+.header {
+    padding: 265px 0 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header h1 {
+    font-size: 125px;
+    font-family: "Oswald";
+    margin-bottom: 35px;
+}
+
+.header p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.tour {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.tour .content-header {
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.tour .content-header h2 {
+    font-family: "Oswald";
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.tour .content-header p {
+    font-size: 30px;
+}
+
+.tour .content-block .inner-content {
+    background-color: #303030;
+    padding: 35px 8px 26px;
+    text-align: center;
+}
+
+.tour .content-block .inner-content h3 {
+    font-size: 37px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.tour .content-block .inner-content p {
+    font-size: 22px;
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding: 172px 0;
+    }
+
+    .header h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .header p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+        min-width: 200px;
+        padding: 15px 15px;
+    }
+
+    .tour .content-header {
+        margin-bottom: 40px;
+    }
+
+    .tour .content-header h2 {
+        font-size: 30px;
+    }
+
+    .tour .content-header p {
+        font-size: 16px;
+    }
+
+    .tour .content-block .inner-content h3 {
+        font-size: 25px;
+    }
+
+    .tour .content-block .inner-content p {
+        font-size: 16px;
+    }
+
+    .tour .content-block {
+        margin-bottom: 15px;
+    } 
+}
