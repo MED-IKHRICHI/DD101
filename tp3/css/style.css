@@ -96,26 +96,39 @@ body {
     margin-bottom: 30px;
 }
 
-.tour {
+.section {
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0;
 }
 
-.tour .content-header {
+.section .content-header {
     text-align: center;
     margin-bottom: 85px;
 }
 
-.tour .content-header h2 {
+.section .content-header h2 {
     font-family: "Oswald";
     font-size: 75px;
     font-weight: 700;
 }
 
-.tour .content-header p {
+.section .content-header p {
     font-size: 30px;
+}
+
+.tour .content-block .inner-img {
+    overflow: hidden;
+    position: relative;
+}
+
+.tour .content-block img {
+    transition: all .3s;
+}
+
+.tour .content-block:hover img {
+    transform: scale(1.5);
 }
 
 .tour .content-block .inner-content {
@@ -132,6 +145,125 @@ body {
 
 .tour .content-block .inner-content p {
     font-size: 22px;
+}
+
+.pricing .card {
+    background-color: #e8631c;
+    padding: 64px 25px 27px;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.pricing .card:hover {
+    background-color: #303030;
+    box-shadow: 0 0 10px #e8631c;
+}
+
+.pricing .card img {
+    height: 132px;
+    width: auto;
+    margin: 0 auto 60px;
+    display: block;
+}
+
+.pricing .card h3 {
+    font-size: 37px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.pricing .card p {
+    font-size: 21px;
+    text-align: center;
+}
+
+.pricing .card span {
+    text-align: center;
+    background-color: #303030;
+    display: block;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1;
+    padding: 20px 15px;
+    border-radius: 4px;
+    margin-top: 24px;
+    transition: background .3s;
+}
+
+.pricing .card:hover span {
+    background-color: #e8631c;
+}
+
+.block-img {
+    min-height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-img .content {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-height: inherit;
+}
+
+.block-img .content.content-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block-img-left .content.content-text {
+    padding-left: 84px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block-img-right .content.content-text {
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block-img .content.content-text h2 {
+    font-weight: 700;
+    font-size: 75px;
+    margin-bottom: 60px;
+}
+
+
+.block-img .content.content-text p {
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+
+
+.block-img .content.content-text a {
+    display: inline-block;
+    background-color: #303030;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 17.5px 15px;
+    max-width: 320px;
+    text-align: center;
+    transition: all .3s;
+    border-radius: 4px;
+}
+
+.block-img .content.content-text a:hover {
+    background-color: #FFF;
+    color: #303030;
+    box-shadow: 0 0 10px #e8631c inset;
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -155,15 +287,15 @@ body {
         padding: 15px 15px;
     }
 
-    .tour .content-header {
+    .section .content-header {
         margin-bottom: 40px;
     }
 
-    .tour .content-header h2 {
+    .section .content-header h2 {
         font-size: 30px;
     }
 
-    .tour .content-header p {
+    .section .content-header p {
         font-size: 16px;
     }
 
