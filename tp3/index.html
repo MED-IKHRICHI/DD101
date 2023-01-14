@@ -125,7 +125,124 @@
                 <a href="">read more</a>
             </div>
             <div class="content content-img" style="background-image: url(./images/block-img-right.png);"></div>
-        </section> 
+        </section>
+        <section class="section statistics">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="content-header">
+                            <h2>Our Statisticsr</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                                vestibulum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="content">
+                            <span id="num1">1240</span><span>+</span>
+                            <span>Club</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="content">
+                            <span id="num2">2000</span><span>+</span>
+                            <span>Active Member</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="content">
+                            <span id="num3">1000</span><span>+</span>
+                            <span>Community</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section herbert" style="background-image: url('./images/bg-herbert.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                            <h2>Herbert Simon</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section newLetter" style="background-image: url('./images/bg-newLetter.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="content-header">
+                            <h2>SUBSCRIBE</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                            <form action="">
+                                <input type="email" name="" id="" class="input" placeholder="Your Email">
+                                <input type="submit" value="Subscribe" class="btn" >
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h3>Musicology</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.</p>
+                        <div class="media">
+                            <ul>
+                                <li><a href="#"><img src="./images/icons/Instagram.png" /></a></li>
+                                <li><a href="#"><img src="./images/icons/Facebook.png" /></a></li>
+                                <li><a href="#"><img src="./images/icons/Twitter.png" /></a></li>
+                                <li><a href="#"><img src="./images/icons/WhatsApp.png" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 offset-md-1">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#history">History</a></li>
+                            <li><a href="#our-team">Our Team</a></li>
+                            <li><a href="#brand-guideline">Brand Guidelines</a></li>
+                            <li><a href="#terms-and-condition">Terms & Condition</a></li>
+                            <li><a href="#privacy-policy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">How to Order</a></li>
+                            <li><a href="#">Our Product</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Promo</a></li>
+                            <li><a href="#">Payment Method</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h3>Other</h3>
+                        <ul>
+                            <li><a href="javascript:void(0)">Contact Us</a></li>
+                            <li><a href="javascript:void(0)">Help</a></li>
+                            <li><a href="javascript:void(0)">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="./js/countMe.min.js"></script>
+    <script>
+        window.onload = () => {
+            // $(selector).countMe(delay,speed)
+            $("#num1").countMe(300, 3);
+            $("#num2").countMe(300, 3);
+            $("#num3").countMe(300, 3);
+        }
+    </script>
 </body>
 </html>
