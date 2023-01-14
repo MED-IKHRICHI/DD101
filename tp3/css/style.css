@@ -125,6 +125,7 @@ body {
 
 .tour .content-block img {
     transition: all .3s;
+    width: 100%;
 }
 
 .tour .content-block:hover img {
@@ -266,6 +267,165 @@ body {
     
 }
 
+.section.statistics {
+    background-color: #303030;
+}
+
+.section.statistics .content-header h2 {
+    margin-bottom: 60px;
+}
+
+.section.statistics .content-header p {
+    font-size: 28px;
+}
+
+.section.statistics .content {
+    text-align: center;
+}
+.section.statistics .content span {
+    font-family: "Oswald";
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1;
+    display: inline-block;
+}
+.section.statistics .content span:last-of-type {
+    display: block;
+    font-size: 36px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 35px;
+}
+
+.section.herbert {
+    background-color: #e8631c;
+    background-blend-mode: multiply;
+    min-height: 100vh;
+    background-position: center center;
+}
+.section.herbert .container {
+    height: 100%;
+}
+
+.section.herbert .container .row {
+    min-height: 100vh;
+    min-height: calc(100vh - 200px);
+    align-items: center;
+}
+
+.section.herbert .content {
+    text-align: center;
+}
+
+.section.herbert p {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.section.herbert h2 {
+    font-size: 68px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 77px;
+}
+
+.section.newLetter .content-header h2 {
+    margin-bottom: 60px;
+}
+
+.section.newLetter .content-header h2 {
+    margin-bottom: 50px;
+}
+
+.section.newLetter form {
+    display: flex;
+    max-width: 750px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.section.newLetter .input {
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 400;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 17.5px 15px;
+    flex: 1;
+}
+
+::placeholder {
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 400;
+    color: black;
+    opacity: 50%;
+}
+
+.section.newLetter .btn {
+    background-color: #303030;
+    font-family: "Oswald";
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    border: none;
+    min-width: 222px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    flex: 0 0 222px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.section.newLetter .btn:hover {
+    background-color: #e8631c;
+    box-shadow: 0 0 10px #303030;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    background-color: #303030;
+    padding: 120px 0 90px;
+}
+
+footer h3 {
+    font-weight: 400;
+    font-size: 33px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+footer p {
+    font-size: 17px;
+}
+
+footer .media {
+    padding-top: 35px;
+}
+
+footer .media ul {
+    margin: 0 -8px;
+}
+
+footer .media ul li {
+    display: inline-block;
+    padding: 0 8px;
+    max-width: 54px;
+}
+
+footer  ul li a {
+    font-size: 17px;
+    display: inline-block;
+}
+
 @media screen and (max-width: 767px) {
     .header {
         padding: 172px 0;
@@ -285,6 +445,10 @@ body {
         font-size: 16px;
         min-width: 200px;
         padding: 15px 15px;
+    }
+
+    .section {
+        padding: 50px 0;
     }
 
     .section .content-header {
@@ -310,4 +474,106 @@ body {
     .tour .content-block {
         margin-bottom: 15px;
     } 
+
+    .block-img {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .block-img .content {
+        max-width: 100%;
+        width: 100%;
+
+    }
+
+    .block-img .content.content-text {
+        padding: 50px 15px;
+        order: 1;
+    }
+
+    .block-img .content.content-img {
+        min-height: 75vh;
+        order: 2;
+    }
+
+    .section.statistics {
+        padding: 50px 0;
+    }
+    .section.statistics .content-header h2 {
+        margin-bottom: 15px;
+    }
+
+    .section.statistics .content span {
+        font-size: 25px;
+    }
+
+    .section.statistics .content span:last-of-type {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .section.statistics .col-4:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+
+    .section.statistics .content-header p,
+    .section.herbert p {
+        font-size: 16px;
+    }
+
+    .section.herbert h2 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .section.herbert .container .row {
+        min-height: 50vh;
+        min-height: calc(50vh - 100px);
+    }
+
+    .section.herbert {
+        min-height: 50vh;
+    }
+    .section.herbert,
+    .section.newLetter {
+        padding: 50px 0;
+    }
+    
+    .section.newLetter .content-header {
+        margin-bottom: 0;
+    }
+
+    .section.newLetter form {
+        display: block;
+    }
+
+    .section.newLetter .input {
+        padding: 15px 15px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+    }
+
+    .section.newLetter .btn  {
+        font-size: 16px;
+        min-width: 200px;
+        padding: 15px 15px;
+        margin-top: 15px;
+    }
+
+    footer {
+        padding: 60px 0 45px;
+    }
+    
+    footer .col-md-2 {
+        margin-top: 30px;
+    }
+
+    footer h3 {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
 }
