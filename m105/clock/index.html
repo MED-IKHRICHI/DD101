@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #time {
+            max-width: 500px;
+            margin: auto;
+            background: red;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 100px red;
+        }
+
+        #time h1 {
+            font-size: 50px;
+            line-height: 90px;
+            color: #FFFF;
+        }
+        #time2 {
+            width: 300px;
+            height: 300px;
+            background: black;
+            border-radius: 50%;
+            position: relative;
+            margin: auto;
+        }
+        #minute {
+            position: absolute;
+            height: 110px;
+            border: 3px solid #FFFF;
+            background-color: #FFFF;
+            left: 153px;
+            top: 40px;
+            width: 0;
+            transform: rotate(0deg);
+            transform-origin: bottom left;
+        }
+
+        #second {
+            position: absolute;
+            height: 125px;
+            border: 2px solid #ffff00;
+            background-color: #ffff00;
+            left: 152px;
+            top: 25px;
+            width: 0;
+            transform: rotate(0deg);
+            transform-origin: bottom left;
+        }
+
+        #hours {
+            position: absolute;
+            height: 100px;
+            border: 4px solid #ff0000;
+            background-color: #ff0000;
+            left: 154px;
+            top: 50px;
+            width: 0;
+            transform: rotate(0deg);
+            transform-origin: bottom left;
+        }
+
+        #time2:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #0aec8a;
+            z-index: 99999;
+        }
+
+        #inc {
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="time"></div>
+    <div id="time2">
+        <div id="hours"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+    <div id="inc">0</div>
+    <script src="main.js"></script>
+</body>
+</html>
