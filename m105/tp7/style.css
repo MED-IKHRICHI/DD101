@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 600px;
+    margin: auto;
+}
+
+tr.active {
+    background-color: aquamarine;
+}
+
+td,th {
+    padding: 10px;
+    border: 1px solid #000
+}
+
+.btns {
+    text-align: center;
+}
+
+button {
+    background: transparent;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s;
+    max-width: 150px;
+    margin-left: auto;
+    display: inline-block;
+}
+
+#deleteRow {
+    display: none;
+}
+
+button:hover,
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+}
+
+#lightbox.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+
+.container {
+    position: relative;
+    background-color: #FFF;
+    padding: 30px;
+}
+
+#formAdd {
+    min-width: 560px;
+    width: 100%;
+    margin: auto;
+}
+
+#btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+#btn-close:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+    height: 1px;
+    margin: auto;
+    background-color: #000;
+}
+
+#btn-close:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 15px;
+    width: 1px;
+    margin: auto;
+    background-color: #000;
+}
+
+#btn-close:hover {
+    transform: rotate(45deg) scale(1.2);
+}
+
+
