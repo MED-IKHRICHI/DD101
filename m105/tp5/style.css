@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 560px;
+    padding: 0 15px;
+    margin: auto;
+}
+.post {
+    padding: 15px 0;
+}
+
+.post-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 5px 0;
+    color: #2e342b;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    display: block;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100px;
+    margin-left: auto;
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    background-color: transparent;
+    border: 1px solid ;
+    border-radius: 5px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+#comments {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+#comments li {
+    color: #716F6F;
+    position: relative;
+}
+
+#comments li span {
+    display: block;
+    text-align: right;
+    color: #716F6F;
+}
+
+.btn.btn-update {
+    position: absolute;
+    right: 25px;
+    top: -5px;
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn.btn-delete {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
