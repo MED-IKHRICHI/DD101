@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 100px 15px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form .inner-input {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+form label {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0 0 15px;
+    color: #000000;
+    font-weight: 600;
+}
+
+form select {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 2px solid #000000;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 15px;
+    outline: none;
+    color: #000000;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 2px solid #000000;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 15px;
+    outline: none;
+    color: #000000;
+}
+
+form span {
+    color: red;
+    font-size: 14px;
+    line-height: 1.2;
+    display: block;
+    margin-top: 5px;
+}
+
+.inner-input.has-check label,
+.inner-input.has-check input{
+    display: inline-block;
+    width: auto;
+}
+
+.inner-input.has-check input {
+    margin-right: 15px;
+}
+
+form input[type=submit] {
+    transition: all .3s;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#icon-eys {
+    position: absolute;
+    right: 5px;
+    top: 34.2px;
+    bottom: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+}

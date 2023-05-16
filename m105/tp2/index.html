@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content">
+        <form action="" id="form">
+           <div class="inner-input">
+                <label for="profile_genre">Genre</label>
+                <select id="profile_genre">
+                    <option value=""></option>
+                    <option value="femme">Femme</option>
+                    <option value="homme">Homme</option>
+                </select>
+                <span></span>
+            </div> 
+            <div class="inner-input">
+                <label for="profile_name">Nom</label>
+                <input type="text" name="profile_name" placeholder="Nom" id="profile_name">
+                <span></span>
+            </div> 
+            <div class="inner-input">
+                <label for="profile_prenom">Prénom</label>
+                <input type="text" name="profile_prenom" placeholder="Prénom" id="profile_prenom">
+                <span></span>
+            </div>
+            <div class="inner-input">
+                <label for="profile_date">Date de naissance</label>
+                <input type="date" name="profile_date" placeholder="Date de naissance" id="profile_date">
+                <span></span>
+            </div>
+            <div class="inner-input">
+                <label for="profile_mail">E-mail</label>
+                <input type="text" name="profile_mail" placeholder="E-mail" id="profile_mail">
+                <span></span>
+            </div>
+            <div class="inner-input">
+                <label for="profile_password">Mot de passe</label>
+                <input type="password" name="profile_password" placeholder="Mot de passe" id="profile_password">
+                <span></span>
+                <span style="background-image: url(./eys.jpg)" id="icon-eys"></span>
+            </div>
+            <div class="inner-input has-check">
+                <input type="checkbox" name="profile_accept" id="profile_accept" checked>
+                <label for="profile_accept">Accept les conditions</label>
+                <span></span>
+            </div>
+
+            <div class="inner-btn">
+                <input type="submit" value="Enregistre">
+            </div>
+        </form>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
